@@ -1,20 +1,22 @@
 # Learning JUCE
 
-JUCE is a big class with a lot of nested classes, methods and properties, everything in a JUCE application is written in the the JUCE class. New projects have a number of methods already written.
+JUCE is a big class with a lot of nested classes, methods and properties, a JUCE application is mostly going to be written in the JUCE class. New projects come with a JUCE app boilerplate.
 
 ## Basic
 
-### Two main files
+### Two main files (Plug-In)
+
+[official docs](https://docs.juce.com/master/tutorial_code_basic_plugin.html)
 
 - `source/PluginProcessor`: contains all the audio processing stuff
 - `source/PluginEditor)`: contains the visual (GUI) part of the app
 
 `PluginProcessor` and `PluginEditor` are like the backend and the frontend respectively.
 
-### Two main methods
+### Two main audio processor methods
 
 - `prepareToPlay`: initialization
-- `processBlock`: a function that processes blocks of audio (received as an array).
+- `processBlock`: a method that processes blocks of audio (received as an array).
 
 `prepareToPlay` and `processBlock` are like `init` and `loop` on Arduino.
 
