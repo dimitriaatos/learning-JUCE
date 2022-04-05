@@ -23,3 +23,9 @@ JUCE is a big class with a lot of nested classes, methods and properties, a JUCE
 ### Working with blocks of audio
 
 Samples are processed in batches (called blocks) in the `processBlock` function, a block is an array of recent samples. A simple operation with the signal, like multiplying it with a number will have to be implemented as a loop that does the multiplication for each sample of the block.
+
+## State management
+
+[official docs](https://docs.juce.com/master/classValueTree.html)
+
+`ValueTree` is a state management class
